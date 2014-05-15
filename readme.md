@@ -5,19 +5,19 @@ Mercury is a modern and responsive child theme for [WordPress's P2](http://p2the
 This is my first attempt at a child theme, and the first open source project I've worked on, so please be gentle!
 
 ## Core Template Changes
-* header.php 
--- Viewport meta tag added to support zooming.
--- Stylesheet link to Google Open Sans was added.
--- The sidebar div was removed from the header.
+* `header.php`
+  - Viewport meta tag added to support zooming.
+  - Stylesheet link to Google Open Sans was added.
+  - The sidebar div was removed from the header.
 
-* footer.php
--- The sidebar div was added to the footer.
+* `footer.php`
+  - The sidebar div was added to the footer.
 
-* functions.php 
--- Removes the native P2 iPhone styles and the viewport meta tag that disabled zooming.
+* `functions.php`
+  - Removes the native P2 iPhone styles and the viewport meta tag that disabled zooming.
 
-* style.css 
--- Lots of high specificity rules to override the parent theme. It's written mobile first, with media queries immediately following their default values.
+* `style.css` 
+  - Lots of high specificity rules to override the parent theme. It's written mobile first, with media queries immediately following their default values.
 
 ## Demo and Download
 View a demo of the theme at [ryansommers.com/mercury](http://ryansommers.com/mercury).
