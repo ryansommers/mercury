@@ -1,7 +1,7 @@
 /*
 Theme Name:     Mercury
-Theme URI:      
-Description:    Child theme for P2
+Theme URI:      https://github.com/ryansommers/mercury
+Description:    Child Theme for P2
 Author:         Ryan Sommers
 Author URI:     http://ryansommers.com/
 Template:       p2-wpcom
@@ -33,11 +33,19 @@ a:hover {
 
 /* Font Overrides */
 body, form *, #respond #cancel-comment-reply-link, input, textarea, h1, h2, h3, #postbox label, #help dd, .inlineediting input.title {
+	color: #4b4a4a;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 }
 h1 {
 	font-weight: 300;
+}
+code, pre {
+	font-size: 13px;
+}
+#main p, #main ul, #main ol {
+	font-size: 15px;
+	line-height: 1.5;
 }
 
 
@@ -157,6 +165,39 @@ textarea.posttext:focus,
 	outline: none;
 }
 
+/* Main Navigation */
+.main-navigation {
+	background: #e9e3e3;
+	border-radius: 2px;
+	margin: 20px 0 30px 0;
+	width: auto;
+}
+@media (min-width: 620px) {
+	.main-navigation {
+		margin: 20px 0 30px 82px;
+	}
+}
+.main-navigation .menu li:hover {
+	background: #f6f1f1;
+}
+.main-navigation .menu li a {
+	color: #676565;
+}
+.main-navigation .menu ul {
+	border-bottom: 1px solid #e9e3e3;
+	border-left: 1px solid #e9e3e3;
+	border-right: 1px solid #e9e3e3;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.main-navigation .menu li li {
+	background: #fff;
+	border-top: 1px solid #e9e3e3;
+}
+.main-navigation .menu li li:hover {
+	background: #f6f1f1;
+}
 
 /* Post Box */
 #postbox {
@@ -426,7 +467,7 @@ form#new_post {
 		top: auto;
 	}
 }
-#main h4 {
+#main ul#postlist li > h4 {
 	border-left: 1px solid #e9e3e3;
 	font-size: 16px;
 	margin: 0 0 0 20px;
@@ -436,7 +477,7 @@ form#new_post {
 	z-index: 1;
 }
 @media (min-width: 620px) {
-	#main h4 {
+	#main ul#postlist li > h4 {
 		border: 0 none;
 		border-left: 1px solid #e9e3e3;
 		margin: 0 0 0 62px;
@@ -448,17 +489,17 @@ form#new_post {
 	margin: 0;
 	padding: 0 0 10px 0;
 }
-#main h4 > a {
+#main ul#postlist li > h4 > a {
 	display: block;
 	margin: 0 0 0 32px;
 }
 @media (min-width: 620px) {
-	#main h4 > a {
+	#main ul#postlist li > h4 > a {
 		display: inline-block;
 		margin: 0 6px 0 0;
 	}
 }
-#main h4 .meta {
+#main ul#postlist li > h4 .meta {
 	font-size: 12px;
 	margin: 0 0 0 0;
 }
@@ -487,8 +528,6 @@ form#new_post {
 }
 #main p {
 	color: #4b4a4a;
-	font-size: 15px;
-	line-height: 1.5;
 	margin: 0;
 	padding: 0 0 1em 0;
 }
@@ -578,6 +617,7 @@ form#new_post {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
+	font-size: 15px !important;
 	padding: 0;
 }
 #main .format-link .postcontent p a {
@@ -599,6 +639,13 @@ form#new_post {
 		border-radius: 2px;
 	}
 }
+#main .format-link .postcontent p a:hover {
+	color: #3478e3;
+}
+#main .postcontent blockquote p:first-child, 
+#main .postcontent blockquote p:first-child {
+	padding: 12px 0;
+}
 .category-quote blockquote, 
 .format-quote blockquote {
 	background: #f6f1f1;
@@ -609,8 +656,6 @@ form#new_post {
 	-moz-box-shadow: none;
 	box-shadow: none;
 	color: #656161;
-	font-size: 15px;
-	line-height: 1.5;
 	margin: 0;
 	padding: 12px 12px 12px 48px;
 	position: relative;
@@ -687,7 +732,7 @@ form#new_post {
 
 
 /* Inline Comments Header */
-#main .inlinecomments h4 {
+#main ul#postlist .inlinecomments h4 {
 	border: 0 none;
 	font-size: 13px;
 	font-weight: bold;
@@ -695,7 +740,7 @@ form#new_post {
 	padding: 0 0 5px 0;
 }
 @media (min-width: 620px) {
-	#main .inlinecomments h4 {
+	#main ul#postlist .inlinecomments h4 {
 		margin: 0;
 	}
 }
@@ -910,6 +955,19 @@ form#new_post {
 	#footer p {
 		padding: 0 0 1em 0;
 	}
+}
+
+.sticky {
+	background-color: #fafafa;
+	border: 1px solid #eee !important;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	margin: 15px 0;
+	padding: 12px !important;
 }
 
 #help dl {
