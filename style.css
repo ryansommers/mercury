@@ -1,14 +1,20 @@
 /*
-Theme Name:     Mercury
-Theme URI:      https://github.com/ryansommers/mercury
-Description:    A Child Theme for WordPress's P2
-Author:         Ryan Sommers
-Author URI:     http://ryansommers.com/
-Template:       p2-wpcom
-Version:        1.0.0
+Theme Name: Mercury
+Theme URI: http://ryansommers.com/mercury
+Description: A modern and responsive child theme for WordPress's P2.
+Author: Ryan Sommers
+Author URI: http://ryansommers.com/
+Template: p2
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, responsive-layout, rtl-language-support, right-sidebar, white, light, front-page-post-form, translation-ready, custom-background, custom-header, custom-menu, post-formats, sticky-post, theme-options
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others
 */
 
-@import url("../p2-wpcom/style.css");
+@import url("../p2/style.css");
 
 /* General Resets */
 body {
@@ -60,6 +66,7 @@ body #header {
 	background: transparent;
 	border: 0 none;
 	box-shadow: none;
+	display: block;
 	margin: 10px 0 0 0;
 }
 @media (min-width: 620px) {
@@ -384,7 +391,8 @@ form#new_post {
 
 /* Avatars */
 #postbox div.avatar,
-#postlist .post-avatar {
+#postlist .post-avatar,
+.p2-recent-comments img.avatar {
 	background: #fff;
 	border-radius: 999px;
 	display: inline-block;
@@ -466,7 +474,7 @@ form#new_post {
 	#main #postlist .commentlist li.depth-1 > img.avatar {
 		margin-left: 0;
 	}
-}
+} 
 
 
 /* Main Content */
@@ -752,7 +760,11 @@ form#new_post {
 		margin: 10px 0 0 82px;
 	}
 }
-
+.navigation {
+	border-color: #e9e3e3;
+	margin: 40px 0 0 0;
+	padding: 20px 0;
+}
 
 /* Inline Editing */
 .inlineediting .row2 {
@@ -965,20 +977,14 @@ form#new_post {
 #sidebar ul li {
 	font-size: 13px;
 }
-
-
-.postcontent img,
-#sidebar img {
-	max-width: 99%;
-	height: auto;
+.p2-recent-comments td {
+	padding: 5px 0;
+}
+.p2-recent-comments td.avatar {
+	padding: 5px 10px 5px 0;
 }
 
-.navigation {
-	border-color: #e9e3e3;
-	margin: 40px 0 0 0;
-	padding: 20px 0;
-}
-
+/* Footer */
 #footer {
 	background: #f6f1f1;
 	border-radius: 2px 2px 0 0;
@@ -999,6 +1005,12 @@ form#new_post {
 	}
 }
 
+/* Misc */
+.postcontent img,
+#sidebar img {
+	max-width: 99%;
+	height: auto;
+}
 .sticky {
 	background-color: #fafafa;
 	border: 1px solid #eee !important;
@@ -1011,13 +1023,9 @@ form#new_post {
 	margin: 15px 0;
 	padding: 12px !important;
 }
-
 #help dl {
 	font-size: 1em;
 }
-
-
-
 .cf:before,
 .cf:after {
 	content: " ";
