@@ -22,9 +22,16 @@ This is my first attempt at a child theme, and the first open source project I'v
 ## Demo and Download
 View a demo of the theme at [ryansommers.com/mercury](http://ryansommers.com/mercury).
 
-You can download Mercury at [github.com/ryansommers/mercury](https://github.com/ryansommers/mercury).
+You can download Mercury at [github.com/ryansommers/mercury](https://github.com/ryansommers/mercury) or [wordpress.org/themes/mercury](https://wordpress.org/themes/mercury).
 
 ## Changelog
+
+### Version 1.0.4
+* `style.css`
+  - Changed theme description
+
+* `readme.md`
+  - Added link to Mercury on WordPress.org
 
 ### Version 1.0.3
 * `style.css`
