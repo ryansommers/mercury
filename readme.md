@@ -29,9 +29,14 @@ You can download Mercury at [github.com/ryansommers/mercury](https://github.com/
 ### Version 1.0.4
 * `style.css`
   - Changed theme description
+  - Fixed a margin issue when hovering over avatars on small screens
+  - Added a margin to `.respond-wrap` on post pages.
 
 * `readme.md`
   - Added link to Mercury on WordPress.org
+
+* `screenshot.png`
+  - Modified screenshot per WordPress's guidelines
 
 ### Version 1.0.3
 * `style.css`
