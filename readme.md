@@ -26,6 +26,10 @@ You can download Mercury at [github.com/ryansommers/mercury](https://github.com/
 
 ## Changelog
 
+### Version 1.0.5
+* `style.css`
+  - Minor bug fix.
+
 ### Version 1.0.4
 * `style.css`
   - Changed theme description

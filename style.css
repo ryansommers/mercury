@@ -5,7 +5,7 @@ Description: Enjoy all of WordPress's P2 theme features like inline comments, a 
 Author: Ryan Sommers
 Author URI: http://ryansommers.com/
 Template: p2
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, responsive-layout, rtl-language-support, right-sidebar, white, light, front-page-post-form, translation-ready, custom-background, custom-header, custom-menu, post-formats, sticky-post, theme-options
@@ -774,6 +774,14 @@ form#new_post {
 	#main .discussion p {
 		margin: 10px 0 0 82px;
 	}
+}
+#main .discussion p a {
+	color: #888;
+}
+#main .discussion p a:hover {
+	color: #d54e20;
+	border-bottom: 1px solid #d54e20;
+	text-decoration: none;
 }
 .navigation {
 	border-color: #e9e3e3;
