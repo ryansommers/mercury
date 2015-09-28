@@ -118,6 +118,10 @@ input[type="submit"] {
 #postbox textarea#posttext, textarea.posttext,
 .inlineediting input[type="text"],
 #wrapper form input[type="text"],
+#wrapper form input[type="url"],
+#wrapper form input[type="email"],
+#wrapper form input[type="number"],
+#wrapper form input[type="password"],
 .textedit textarea {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -134,6 +138,10 @@ textarea.posttext,
 #postbox input#tags,
 .inlineediting input[type="text"],
 #wrapper form input[type="text"],
+#wrapper form input[type="url"],
+#wrapper form input[type="email"],
+#wrapper form input[type="number"],
+#wrapper form input[type="password"],
 .textedit textarea {
 	background: #fff;
 	border: 3px solid #e9e3e3;
