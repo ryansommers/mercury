@@ -121,6 +121,7 @@ input[type="submit"] {
 #wrapper form input[type="url"],
 #wrapper form input[type="email"],
 #wrapper form input[type="number"],
+#wrapper form input[type="search"],
 #wrapper form input[type="password"],
 .textedit textarea {
 	-webkit-box-sizing: border-box;
@@ -141,6 +142,7 @@ textarea.posttext,
 #wrapper form input[type="url"],
 #wrapper form input[type="email"],
 #wrapper form input[type="number"],
+#wrapper form input[type="search"],
 #wrapper form input[type="password"],
 .textedit textarea {
 	background: #fff;
